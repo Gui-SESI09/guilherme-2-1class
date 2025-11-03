@@ -7,20 +7,33 @@
 </style>
 
 <h1>
-    Pilha
+    Atividade Pilha - Empilhar e Desempilhar
 </h1>
 
+<h3>Empilhar</h3>
 <input type="text" id="input" placeholder="Digite algo aqui!">
+<button onclick="empilhar()">PUSH</button>
 
-<button onclick="empilhar()">
-    PUSH
-</button>
+<br><br>
+
+<h3>Desempilhar</h3>
+<input type="text" id="des_input" placeholder="Digite algo aqui!">
+<button onclick="desempilhar()">PUSH</button>
 
 <script>
+    let lista = [];
+    
     function empilhar() {
         let input = document.getElementById('input').value;
         let lista = [];
         lista.push(input);
+        console.log(lista);
+    }
+
+    function desempilhar() {
+        let input = document.getElementById('des_input').value;
+        let lista = [];
+        lista.pop(lista);
         console.log(lista);
     }
 
