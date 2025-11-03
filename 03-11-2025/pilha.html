@@ -1,0 +1,27 @@
+<style>
+    body {
+        font-family: 'Segoe UI', 
+        Tahoma, Geneva, Verdana, 
+        sans-serif;
+    }
+</style>
+
+<h1>
+    Pilha
+</h1>
+
+<input type="text" id="input" placeholder="Digite algo aqui!">
+
+<button onclick="empilhar()">
+    PUSH
+</button>
+
+<script>
+    function empilhar() {
+        let input = document.getElementById('input').value;
+        let lista = [];
+        lista.push(input);
+        console.log(lista);
+    }
+
+</script>
